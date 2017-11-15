@@ -1,0 +1,40 @@
+:global {
+	& html,
+	& body {
+		margin: 0;
+	}
+
+	& html {
+		box-sizing: border-box;
+		min-height: 100vh;
+		background-color: #eaeaea;
+	}
+
+	& *,
+	& *:before,
+	& *:after {
+		box-sizing: inherit;
+	}
+
+	& *,
+	& p,
+	& span,
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	& *,
+	& *:focus,
+	& *:active {
+		outline: none;
+	}
+}

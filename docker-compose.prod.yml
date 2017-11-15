@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mongo:
+    image: mongo:3
+    ports:
+      - '27017:27017'
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '5000:5000'
+    links:
+      - mongo
